@@ -1,10 +1,9 @@
-def sum_of_digits(s):
-    total = 0
-    for char in s:
-        if char.isdigit():
-            total += int(char)
-    print(f"Sum of digits: {total}")
+input_string = input("Enter a string of digits: ")
 
-# Example usage
-input_str = input("Enter a string containing digits: ")
-sum_of_digits(input_str)
+digit_sum = 0
+
+for char in input_string:
+    if char >= '0' and char <= '9':  # Check if the character is a digit
+        digit_sum += int(char)
+
+print(f"Sum of digits: {digit_sum}")
