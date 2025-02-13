@@ -15,7 +15,7 @@ for char in s:
     else:
         other_count += 1
 
-print("Vowels: {vowel_count}")
+print(f"Vowels: {vowel_count}")
 print(f"Consonants: {consonant_count}")
 print(f"Spaces: {space_count}")
 print(f"Other Characters: {other_count}")
