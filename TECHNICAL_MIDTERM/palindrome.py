@@ -29,5 +29,6 @@ for i, line in enumerate(lines):
         print(f"Line {i+1}: {line.strip()} (sum {total}) - Palindrome")
     else:
         print(f"Line {i+1}: {line.strip()} (sum {total}) - Not a palindrome")
+    
 
 
