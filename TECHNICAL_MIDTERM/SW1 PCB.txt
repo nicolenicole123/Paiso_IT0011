@@ -1,0 +1,25 @@
+SW1 PCB
+en
+conf t
+no ip domain-lookup
+hostname S1
+banner motd #unauthorized accesss is prohibited#
+line console 0
+password ciscoconpass
+login
+exit
+enable secret ciscoenpass
+service password-encryption
+username admin privilege 15 secret admin1pass
+ip domain-name ccna-ptsa.com
+crypto key generate rsa general-keys modulus 1024
+line vty 0 15
+login local
+transport input ssh
+exit
+int vlan 4
+description Management
+ip address 10.19.8.98 255.255.255.248
+no shutdown
+exit
+ip default-gateway 10.19.8.97
