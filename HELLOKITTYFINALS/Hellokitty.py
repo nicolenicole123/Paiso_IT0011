@@ -125,7 +125,7 @@ root.geometry("500x500")
 
 
 try:
-    bg_image = Image.open("bgsan.png")
+    bg_image = Image.open("HELLOKITTYFINALS/bgsan.png")
     bg_image = bg_image.resize((500, 500))  
     bg_photo = ImageTk.PhotoImage(bg_image)
 
@@ -137,7 +137,7 @@ except Exception as e:
 
 
 try:
-    logo_img = Image.open("sanriologo.png")
+    logo_img = Image.open("HELLOKITTYFINALS/sanriologo.png")
     logo_img = logo_img.resize((200, 200))  
     logo_photo = ImageTk.PhotoImage(logo_img)
     logo_label = tk.Label(root, image=logo_photo, bg="#ffe6f0")
